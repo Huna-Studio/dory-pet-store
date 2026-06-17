@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معرض الصور | دوري لأسماك وطيور الزينة</title>
+  <meta name="description" content="شاهد أجمل صور أسماك الزينة، الطيور، الزواحف، والثدييات من متجر دوري في دمياط.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/extras.css">
+  <link rel="stylesheet" href="css/pages/gallery.css">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐠</text></svg>">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PetStore",
+    "name": "دوري لأسماك وطيور الزينة",
+    "description": "متجر متخصص في أسماك الزينة، الطيور، الزواحف، الثدييات، ومستلزمات الحيوانات في دمياط",
+    "url": "https://dory-pets.com",
+    "telephone": "+201001959950",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "دمياط",
+      "addressCountry": "EG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "31.4175",
+      "longitude": "31.8144"
+    },
+    "openingHours": "Mo-Su 09:00-22:00",
+    "priceRange": "$$",
+    "image": "https://dory-pets.com/assets/images/store.jpg",
+    "sameAs": [
+      "https://www.facebook.com/dory.pets",
+      "https://www.instagram.com/dory.pets",
+      "https://www.tiktok.com/@dory.pets"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <div class="particles-container"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🐠</div>
+        <span>دوري</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="gallery.html" class="active">معرض الصور</a></li>
+        <li><a href="marketplace.html">المتجر</a></li>
+        <li><a href="reviews.html">آراء العملاء</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+      
+      <div class="nav-cta">
+        <a href="tel:01001959950" class="phone-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <span>0100 195 95 50</span>
+        </a>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== PAGE HEADER ==================== -->
+  <section class="page-header">
+    <div class="bubbles-container">
+      <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+      <div class="bubble"></div><div class="bubble"></div>
+    </div>
+    <div class="container">
+      <div class="page-header-content reveal">
+        <h1>معرض الصور</h1>
+        <p>أجمل لحظات من عالم دوري - أسماك، طيور، زواحف، وأكثر</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY FILTER ==================== -->
+  <section class="section gallery-filter-section">
+    <div class="container">
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="fish">🐠 أسماك الزينة</button>
+        <button class="filter-btn" data-filter="birds">🦜 الطيور</button>
+        <button class="filter-btn" data-filter="reptiles">🦎 الزواحف</button>
+        <button class="filter-btn" data-filter="mammals">🐇 الثدييات</button>
+        <button class="filter-btn" data-filter="store">🏪 المتجر</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY GRID ==================== -->
+  <section class="section gallery-grid-section">
+    <div class="container">
+      <div class="gallery-grid">
+        <!-- Fish -->
+        <div class="gallery-item reveal" data-category="fish">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">سمكة كلownfish ملونة</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">سمكة كلownfish</span>
+            <span class="gallery-category">أسماك الزينة</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal reveal-delay-1" data-category="fish">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">سمكة أنجيل</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">سمكة أنجيل</span>
+            <span class="gallery-category">أسماك الزينة</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal reveal-delay-2" data-category="fish">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">سمكة ديسكوس</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">سمكة ديسكوس</span>
+            <span class="gallery-category">أسماك الزينة</span>
+          </div>
+        </div>
+        
+        <!-- Birds -->
+        <div class="gallery-item reveal" data-category="birds">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">ببغاء أليف</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">ببغاء أليف</span>
+            <span class="gallery-category">الطيور</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal reveal-delay-1" data-category="birds">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">بومة بيضاء</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">بومة بيضاء</span>
+            <span class="gallery-category">الطيور</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal reveal-delay-2" data-category="birds">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">كناري أصفر</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">كناري أصفر</span>
+            <span class="gallery-category">الطيور</span>
+          </div>
+        </div>
+        
+        <!-- Reptiles -->
+        <div class="gallery-item reveal" data-category="reptiles">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">سلحفاة برمائية</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">سلحفاة برمائية</span>
+            <span class="gallery-category">الزواحف</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal reveal-delay-1" data-category="reptiles">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">سحلية خضراء</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">سحلية خضراء</span>
+            <span class="gallery-category">الزواحف</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal reveal-delay-2" data-category="reptiles">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">ثعبان ملكي</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">ثعبان ملكي</span>
+            <span class="gallery-category">الزواحف</span>
+          </div>
+        </div>
+        
+        <!-- Mammals -->
+        <div class="gallery-item reveal" data-category="mammals">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">أرنب أبيض</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">أرنب أبيض</span>
+            <span class="gallery-category">الثدييات</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal reveal-delay-1" data-category="mammals">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">هامستر ذهبي</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">هامستر ذهبي</span>
+            <span class="gallery-category">الثدييات</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal reveal-delay-2" data-category="mammals">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">قطة صغيرة</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">قطة صغيرة</span>
+            <span class="gallery-category">الثدييات</span>
+          </div>
+        </div>
+        
+        <!-- Store -->
+        <div class="gallery-item reveal" data-category="store">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">واجهة المتجر</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">واجهة المتجر</span>
+            <span class="gallery-category">المتجر</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal reveal-delay-1" data-category="store">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">قسم الأسماك</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">قسم الأسماك</span>
+            <span class="gallery-category">المتجر</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal reveal-delay-2" data-category="store">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">قسم الطيور</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">قسم الطيور</span>
+            <span class="gallery-category">المتجر</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal" data-category="store">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">استقبال العملاء</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">استقبال العملاء</span>
+            <span class="gallery-category">المتجر</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal reveal-delay-1" data-category="store">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">قسم المستلزمات</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">قسم المستلزمات</span>
+            <span class="gallery-category">المتجر</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item reveal reveal-delay-2" data-category="store">
+          <div class="placeholder-img" style="min-height: 280px;">
+            <span style="position:absolute;bottom:10px;font-size:0.8rem;color:var(--mid-gray);">صورة من فعالية</span>
+          </div>
+          <div class="gallery-overlay">
+            <span class="gallery-title">فعالية خاصة</span>
+            <span class="gallery-category">المتجر</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <div class="cta-content">
+          <h2>هل تريد رؤية المزيد؟</h2>
+          <p>زورنا في المتجر واكتشف بنفسك تشكيلتنا الواسعة من الحيوانات والمستلزمات</p>
+          <div class="cta-buttons">
+            <a href="marketplace.html" class="btn btn-primary">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+              تصفح المتجر
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              زورنا
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-icon">🐠</div>
+          <h3>دوري لأسماك وطيور الزينة</h3>
+          <p>وجهتك الأولى في دمياط لكل ما يخص عالم الحيوانات. نقدم لك أجود المنتجات بأفضل الأسعار مع خبرة تزيد عن 10 سنوات.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+            <a href="https://wa.me/201001959950" aria-label="WhatsApp" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.38 3.55 1.07 5.11L2 22l4.89-1.07A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.66 0-3.22-.51-4.52-1.38l-.32-.21-2.9.64.64-2.83-.21-.32A7.96 7.96 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.24-5.76c-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.51.12-.15.23-.59.75-.72.9-.13.15-.27.17-.5.06-.23-.12-.97-.36-1.85-1.14-.68-.61-1.14-1.36-1.27-1.59-.13-.23-.01-.36.1-.48.1-.1.23-.27.34-.4.11-.14.15-.23.23-.38.08-.15.04-.29-.02-.4-.06-.12-.51-1.23-.7-1.68-.18-.44-.37-.38-.51-.39-.13 0-.29-.02-.44-.02-.15 0-.4.06-.61.29-.21.23-.8.78-.8 1.9s.82 2.2.93 2.35c.12.15 1.61 2.46 3.9 3.45.55.24.97.38 1.3.49.55.17 1.05.15 1.45.09.44-.06 1.36-.56 1.55-1.09.19-.54.19-1 .13-1.09-.05-.1-.19-.15-.4-.27z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="gallery.html">معرض الصور</a></li>
+            <li><a href="marketplace.html">المتجر</a></li>
+            <li><a href="reviews.html">آراء العملاء</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>الأقسام</h4>
+          <ul>
+            <li><a href="marketplace.html?cat=fish">أسماك الزينة</a></li>
+            <li><a href="marketplace.html?cat=birds">الطيور الأليفة</a></li>
+            <li><a href="marketplace.html?cat=reptiles">الزواحف</a></li>
+            <li><a href="marketplace.html?cat=mammals">الثدييات</a></li>
+            <li><a href="marketplace.html?cat=accessories">مستلزمات</a></li>
+            <li><a href="marketplace.html?cat=food">الأطعمة</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>تواصل معنا</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>دمياط، مصر<br><small>(استبدل بالعنوان الدقيق)</small></span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span>0100 195 95 50</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>info@dory-pets.com<br><small>(استبدل بالبريد الفعلي)</small></span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            <span>يومياً: 9 صباحاً - 10 مساءً<br><small>(استبدل بأوقات العمل الفعلية)</small></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span class="current-year"></span> دوري لأسماك وطيور الزينة. جميع الحقوق محفوظة.</p>
+        <p>صنع بـ <span class="heart">❤</span> في دمياط</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/201001959950" class="whatsapp-float" target="_blank" aria-label="تواصل عبر واتساب">
+    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.38 3.55 1.07 5.11L2 22l4.89-1.07A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.66 0-3.22-.51-4.52-1.38l-.32-.21-2.9.64.64-2.83-.21-.32A7.96 7.96 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.24-5.76c-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.51.12-.15.23-.59.75-.72.9-.13.15-.27.17-.5.06-.23-.12-.97-.36-1.85-1.14-.68-.61-1.14-1.36-1.27-1.59-.13-.23-.01-.36.1-.48.1-.1.23-.27.34-.4.11-.14.15-.23.23-.38.08-.15.04-.29-.02-.4-.06-.12-.51-1.23-.7-1.68-.18-.44-.37-.38-.51-.39-.13 0-.29-.02-.44-.02-.15 0-.4.06-.61.29-.21.23-.8.78-.8 1.9s.82 2.2.93 2.35c.12.15 1.61 2.46 3.9 3.45.55.24.97.38 1.3.49.55.17 1.05.15 1.45.09.44-.06 1.36-.56 1.55-1.09.19-.54.19-1 .13-1.09-.05-.1-.19-.15-.4-.27z"/></svg>
+  </a>
+
+  <button class="back-to-top" aria-label="العودة للأعلى">
+    <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/extras.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

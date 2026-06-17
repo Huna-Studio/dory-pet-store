@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Branding | دوري</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Cairo', sans-serif; background: #0d1117; color: #fff; padding: 40px; }
+    .brand-section { margin-bottom: 60px; }
+    .brand-section h2 { color: #39d0d8; margin-bottom: 20px; font-size: 1.5rem; }
+    .preview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
+    
+    /* Facebook Cover */
+    .fb-cover {
+      width: 820px; height: 312px;
+      background: linear-gradient(135deg, #0B3D91 0%, #1E6BA8 50%, #39D0D8 100%);
+      border-radius: 8px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+      transform: scale(0.5); transform-origin: top left;
+    }
+    .fb-cover::before {
+      content: '🐠'; font-size: 80px; position: absolute;
+      top: 20px; right: 40px; opacity: 0.3;
+    }
+    .fb-cover h1 { font-size: 48px; font-weight: 800; }
+    .fb-cover p { font-size: 20px; opacity: 0.9; }
+    .fb-cover .phone { position: absolute; bottom: 20px; font-size: 18px; }
+    
+    /* Instagram Post */
+    .ig-post {
+      width: 1080px; height: 1080px;
+      background: linear-gradient(180deg, #0B3D91 0%, #0d1117 100%);
+      border-radius: 8px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+      transform: scale(0.3); transform-origin: top left;
+    }
+    .ig-post .fish-bg { font-size: 200px; position: absolute; opacity: 0.1; }
+    .ig-post h2 { font-size: 72px; color: #39d0d8; }
+    .ig-post .tagline { font-size: 36px; margin-top: 20px; }
+    .ig-post .cta { position: absolute; bottom: 60px; background: #FF6B35; padding: 20px 50px; border-radius: 50px; font-size: 32px; font-weight: 700; }
+    
+    /* Story/Reel */
+    .story {
+      width: 1080px; height: 1920px;
+      background: linear-gradient(135deg, #0B3D91, #39D0D8);
+      border-radius: 8px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      position: relative;
+      transform: scale(0.2); transform-origin: top left;
+    }
+    .story .logo { font-size: 150px; }
+    .story h2 { font-size: 80px; }
+    .story p { font-size: 40px; margin-top: 30px; }
+    .story .swipe { position: absolute; bottom: 100px; font-size: 36px; animation: bounce 2s infinite; }
+    @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-20px)} }
+    
+    .note { background: rgba(57,208,216,0.1); border: 1px solid #39d0d8; padding: 20px; border-radius: 12px; margin-top: 20px; color: #94a3b8; }
+    .note code { color: #39d0d8; background: rgba(0,0,0,0.3); padding: 2px 8px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center; margin-bottom:40px; font-size:2rem;">🐠 دوري - Social Media Branding Guide</h1>
+  
+  <div class="brand-section">
+    <h2>📘 Facebook Cover (820 × 312)</h2>
+    <div class="fb-cover">
+      <h1>دوري لأسماك وطيور الزينة</h1>
+      <p>أفضل متجر حيوانات في دمياط</p>
+      <div class="phone">📞 0100 195 95 50</div>
+    </div>
+    <div class="note">
+      <strong>للاستخدام:</strong> خذ لقطة شاشة للمستطيل الأزرق أعلاه بحجم 820×312 بكسل، أو استخدم Canva/Figma مع الألوان:
+      <code>#0B3D91</code> <code>#39D0D8</code> <code>#FF6B35</code>
+    </div>
+  </div>
+  
+  <div class="brand-section">
+    <h2>📸 Instagram Post (1080 × 1080)</h2>
+    <div class="ig-post">
+      <div class="fish-bg">🐠</div>
+      <h2>دوري</h2>
+      <div class="tagline">عالم الحيوانات في دمياط</div>
+      <div class="cta">زورنا اليوم!</div>
+    </div>
+    <div class="note">
+      <strong>نص مقترح للمنشور:</strong><br>
+      "🐠🦜🦎 من أسماك الزينة للطيور الأليفة للزواحف... عندنا كل حاجة!<br>
+      زورنا في دمياط أو تواصل على واتساب 📱 0100 195 95 50<br>
+      #دوري #دمياط #أسماك_زينة #طيور #حيوانات_أليفة"
+    </div>
+  </div>
+  
+  <div class="brand-section">
+    <h2>📱 Instagram Story / Reel (1080 × 1920)</h2>
+    <div class="story">
+      <div class="logo">🐠</div>
+      <h2>دوري</h2>
+      <p>اكتشف عالم الحيوانات</p>
+      <div class="swipe">👆 اسحب للأعلى</div>
+    </div>
+    <div class="note">
+      <strong>أفكار محتوى للستوريز:</strong><br>
+      • يوم في متجر دوري (تصوير يوم كامل)<br>
+      • نصائح العناية بالسمك/الطيور<br>
+      • عروض وخصومات أسبوعية<br>
+      • فيديوهات قصيرة للحيوانات الجديدة
+    </div>
+  </div>
+  
+  <div class="brand-section">
+    <h2>🎨 Brand Colors</h2>
+    <div style="display:flex; gap:20px; flex-wrap:wrap;">
+      <div style="width:150px; height:100px; background:#0B3D91; border-radius:12px; display:flex; align-items:center; justify-content:center; font-weight:700;">Deep Blue<br>#0B3D91</div>
+      <div style="width:150px; height:100px; background:#39D0D8; border-radius:12px; display:flex; align-items:center; justify-content:center; font-weight:700; color:#0d1117;">Cyan<br>#39D0D8</div>
+      <div style="width:150px; height:100px; background:#FF6B35; border-radius:12px; display:flex; align-items:center; justify-content:center; font-weight:700;">Coral<br>#FF6B35</div>
+      <div style="width:150px; height:100px; background:#FFD700; border-radius:12px; display:flex; align-items:center; justify-content:center; font-weight:700; color:#0d1117;">Gold<br>#FFD700</div>
+    </div>
+  </div>
+  
+  <div class="brand-section">
+    <h2>✍️ Caption Templates</h2>
+    <div class="note" style="white-space:pre-line;">
+<strong>منشور منتج جديد:</strong>
+"وصل حديثاً! 🆕
+[اسم المنتج]
+[وصف قصير]
+💰 السعر: [السعر] ج.م
+📞 للطلب: 0100 195 95 50 (واتساب)
+📍 دمياط"
+
+<strong>منشور نصيحة:</strong>
+"💡 نصيحة اليوم من دوري:
+[نصيحة عن العناية بالحيوانات]
+تابعونا لمزيد من النصائح! 🐠
+#نصائح_دوري #العناية_بالحيوانات"
+
+<strong>منشور عرض:</strong>
+"🔥 عرض خاص هذا الأسبوع!
+[وصف العرض]
+⏰ لفترة محدودة
+📞 0100 195 95 50
+#عروض_دوري #دمياط"
+    </div>
+  </div>
+</body>
+</html>

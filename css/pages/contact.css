@@ -1,0 +1,436 @@
+/* ============================================
+   DORY PET STORE - CONTACT PAGE STYLES
+   ============================================ */
+
+/* ============================================
+   PAGE HEADER
+   ============================================ */
+.page-header {
+  position: relative;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-dark);
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(57, 208, 216, 0.06) 0%, transparent 60%);
+}
+
+.page-header-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.page-header h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: var(--space-md);
+}
+
+.page-header p {
+  color: var(--mid-gray);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   CONTACT INFO CARDS
+   ============================================ */
+.contact-info-section {
+  background: var(--near-black);
+}
+
+.contact-grid {
+  gap: var(--space-lg);
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  text-align: center;
+  transition: var(--transition-base);
+}
+
+.contact-card:hover {
+  border-color: var(--dory-cyan);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-cyan);
+}
+
+.contact-icon-bg {
+  width: 70px;
+  height: 70px;
+  background: var(--gradient-ocean);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-lg);
+  box-shadow: var(--shadow-cyan);
+}
+
+.contact-icon-bg svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--white);
+}
+
+.contact-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: var(--space-sm);
+}
+
+.contact-card p {
+  color: var(--light-gray);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xs);
+}
+
+.contact-note {
+  color: var(--mid-gray);
+  font-size: 0.85rem;
+}
+
+/* ============================================
+   MAP SECTION
+   ============================================ */
+.map-section {
+  background: linear-gradient(180deg, var(--near-black) 0%, rgba(11, 61, 145, 0.06) 50%, var(--near-black) 100%);
+}
+
+.map-container {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.map-placeholder {
+  background: var(--gradient-dark);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-3xl);
+}
+
+.map-icon {
+  font-size: 4rem;
+  margin-bottom: var(--space-lg);
+}
+
+.map-placeholder h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.map-placeholder p {
+  color: var(--mid-gray);
+  margin-bottom: var(--space-xs);
+}
+
+.map-hint {
+  color: var(--dory-cyan);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-lg);
+}
+
+.map-code {
+  background: rgba(0,0,0,0.3);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--mid-gray);
+  max-width: 100%;
+  overflow-x: auto;
+  direction: ltr;
+  text-align: left;
+}
+
+/* ============================================
+   CONTACT METHODS
+   ============================================ */
+.contact-methods-section {
+  background: var(--near-black);
+}
+
+.methods-grid {
+  gap: var(--space-lg);
+}
+
+.method-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: var(--transition-base);
+  text-decoration: none;
+  color: inherit;
+}
+
+.method-card:hover {
+  border-color: var(--dory-cyan);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.method-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.method-icon svg {
+  width: 26px;
+  height: 26px;
+  fill: var(--white);
+}
+
+.method-icon.whatsapp {
+  background: #25D366;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.method-icon.phone {
+  background: var(--dory-cyan);
+  box-shadow: var(--shadow-cyan);
+}
+
+.method-icon.facebook {
+  background: #1877F2;
+  box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
+}
+
+.method-icon.email {
+  background: var(--dory-coral);
+  box-shadow: var(--shadow-coral);
+}
+
+.method-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xs);
+  color: var(--white);
+}
+
+.method-content p {
+  color: var(--mid-gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+}
+
+.method-link {
+  color: var(--dory-cyan);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: var(--transition-base);
+}
+
+.method-card:hover .method-link {
+  color: var(--dory-gold);
+}
+
+/* ============================================
+   FAQ SECTION
+   ============================================ */
+.faq-section {
+  background: linear-gradient(180deg, var(--near-black) 0%, rgba(11, 61, 145, 0.06) 50%, var(--near-black) 100%);
+}
+
+.faq-grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-md);
+  overflow: hidden;
+  transition: var(--transition-base);
+}
+
+.faq-item:hover {
+  border-color: rgba(57, 208, 216, 0.3);
+}
+
+.faq-question {
+  width: 100%;
+  padding: var(--space-lg) var(--space-xl);
+  background: none;
+  border: none;
+  color: var(--white);
+  font-family: var(--font-arabic);
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: right;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.faq-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--dory-cyan);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 300px;
+  padding: 0 var(--space-xl) var(--space-lg);
+}
+
+.faq-answer p {
+  color: var(--mid-gray);
+  line-height: 1.8;
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+.cta-section {
+  background: var(--near-black);
+  padding-bottom: var(--space-4xl);
+}
+
+.cta-box {
+  background: var(--gradient-ocean);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3xl);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-box h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: var(--space-md);
+}
+
+.cta-box p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn-secondary {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.cta-buttons .btn-secondary:hover {
+  background: var(--white);
+  color: var(--dory-deep);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .method-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .map-placeholder {
+    min-height: 300px;
+    padding: var(--space-xl);
+  }
+  
+  .map-code {
+    font-size: 0.7rem;
+  }
+  
+  .faq-question {
+    padding: var(--space-md) var(--space-lg);
+    font-size: 0.95rem;
+  }
+  
+  .faq-item.open .faq-answer {
+    padding: 0 var(--space-lg) var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: var(--space-xl);
+  }
+  
+  .contact-icon-bg {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .contact-icon-bg svg {
+    width: 24px;
+    height: 24px;
+  }
+}

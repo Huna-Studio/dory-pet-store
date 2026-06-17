@@ -1,0 +1,374 @@
+/* ============================================
+   DORY PET STORE - ABOUT PAGE STYLES
+   ============================================ */
+
+/* ============================================
+   PAGE HEADER
+   ============================================ */
+.page-header {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-dark);
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(57, 208, 216, 0.06) 0%, transparent 60%);
+}
+
+.page-header-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.page-header h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: var(--space-md);
+}
+
+.page-header p {
+  color: var(--mid-gray);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   STORY SECTION
+   ============================================ */
+.story-section {
+  background: var(--near-black);
+}
+
+.story-grid {
+  align-items: center;
+  gap: var(--space-3xl);
+}
+
+.story-images {
+  position: relative;
+}
+
+.story-img-main .placeholder-img {
+  border-radius: var(--radius-xl);
+}
+
+.story-img-secondary {
+  position: absolute;
+  bottom: -30px;
+  left: -20px;
+  width: 50%;
+  box-shadow: var(--shadow-lg);
+}
+
+.story-img-secondary .placeholder-img {
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--dory-cyan);
+}
+
+.story-content .section-label {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background: rgba(57, 208, 216, 0.1);
+  color: var(--dory-cyan);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.story-content h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: var(--space-lg);
+  line-height: 1.3;
+}
+
+.story-content p {
+  color: var(--mid-gray);
+  margin-bottom: var(--space-lg);
+  line-height: 1.8;
+}
+
+.story-stats {
+  display: flex;
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.story-stat {
+  text-align: center;
+}
+
+.story-stat-number {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--dory-cyan);
+  line-height: 1;
+}
+
+.story-stat-label {
+  font-size: 0.85rem;
+  color: var(--mid-gray);
+  margin-top: var(--space-xs);
+}
+
+/* ============================================
+   MISSION SECTION
+   ============================================ */
+.mission-section {
+  background: linear-gradient(180deg, var(--near-black) 0%, rgba(11, 61, 145, 0.08) 50%, var(--near-black) 100%);
+}
+
+.mission-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3xl);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-base);
+}
+
+.mission-card:hover {
+  border-color: var(--dory-cyan);
+  transform: translateY(-5px);
+}
+
+.mission-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-ocean);
+}
+
+.mission-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-lg);
+  display: block;
+}
+
+.mission-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.mission-card p {
+  color: var(--mid-gray);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+}
+
+.mission-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
+   VALUES SECTION
+   ============================================ */
+.values-section {
+  background: var(--near-black);
+}
+
+.values-grid {
+  gap: var(--space-lg);
+}
+
+.value-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-base);
+}
+
+.value-card:hover {
+  border-color: var(--dory-cyan);
+  transform: translateY(-5px);
+}
+
+.value-number {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(57, 208, 216, 0.1);
+  line-height: 1;
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.value-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-sm);
+  position: relative;
+  z-index: 1;
+}
+
+.value-card p {
+  color: var(--mid-gray);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================
+   TEAM SECTION
+   ============================================ */
+.team-section {
+  background: linear-gradient(180deg, var(--near-black) 0%, rgba(11, 61, 145, 0.06) 50%, var(--near-black) 100%);
+}
+
+.team-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-align: center;
+  transition: var(--transition-base);
+}
+
+.team-card:hover {
+  border-color: var(--dory-cyan);
+  transform: translateY(-5px);
+}
+
+.team-avatar {
+  margin-bottom: var(--space-lg);
+}
+
+.team-avatar .placeholder-img {
+  border: 3px solid var(--dory-cyan);
+}
+
+.team-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xs);
+}
+
+.team-role {
+  display: block;
+  color: var(--dory-cyan);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.team-card p {
+  color: var(--mid-gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ============================================
+   STORE GALLERY
+   ============================================ */
+.store-gallery-section {
+  background: var(--near-black);
+}
+
+.store-gallery {
+  gap: var(--space-lg);
+}
+
+.store-img {
+  transition: var(--transition-base);
+}
+
+.store-img:hover {
+  transform: scale(1.02);
+}
+
+.store-img .placeholder-img {
+  border: 2px solid rgba(255,255,255,0.05);
+}
+
+/* ============================================
+   CTA SECTION (shared style override)
+   ============================================ */
+.cta-section {
+  padding-bottom: var(--space-4xl);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .story-images {
+    order: -1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .story-img-secondary {
+    left: auto;
+    right: -10px;
+    bottom: -20px;
+  }
+  
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .story-stats {
+    justify-content: center;
+    gap: var(--space-lg);
+  }
+  
+  .story-stat-number {
+    font-size: 1.4rem;
+  }
+  
+  .mission-card {
+    padding: var(--space-xl);
+  }
+  
+  .value-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-img-secondary {
+    width: 45%;
+    bottom: -15px;
+    right: -5px;
+  }
+  
+  .team-avatar .placeholder-img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
